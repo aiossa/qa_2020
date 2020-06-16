@@ -8,6 +8,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          Вы на ветке staging!
+        </p>
+        <p>
           Редактируйте <code>src/App.js</code> и сохраните для обновления!
         </p>
         <a
