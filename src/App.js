@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {simpleCalculation} from './utils/utils';
+
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
         <p>
           Редактируйте <code>src/App.js</code> и сохраните для обновления!
         </p>
+        <p>
+            Result of calculation is {simpleCalculation(10,5)}
+          </p>
         <a
           className="App-link"
           href="https://reactjs.org"
