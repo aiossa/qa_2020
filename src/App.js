@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {simpleCalculation} from './utils/utils';
+import {simpleCalculation, compareTwoNumbers} from './utils/utils';
 
 
 function App() {
+  const [maxNumber, setMaxNumber] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,8 @@ function App() {
         <p>
             Result of calculation is {simpleCalculation(10,5)}
           </p>
+
+          
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -27,7 +30,22 @@ function App() {
           Изучаем реакт!
         </a>
       </header>
+<div>
+
+          <div>
+            <input id = "inp1"></input>
+            <input id = "inp2"></input>
+            <button onClick={() => setMaxNumber(compareTwoNumbers(
+            document.getElementById("inp1").value,
+            document.getElementById("inp2").value
+            ))} >Сравни числа!</button>          
+          </div>
+          <p> Максимальное число {maxNumber}
+          </p>
+  </div>
+
     </div>
+    
   );
 }
 
