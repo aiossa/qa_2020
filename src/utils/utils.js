@@ -5,6 +5,6 @@ export let simpleCalculation = function simpleCalculation(a, b) {
 }
 
 export let compareTwoNumbers = function compareTwoNumbers(inp1, inp2) {
-    if (Math.abs(inp1)> Math.abs(inp2)) return inp1
+    if (inp1 > inp2) return inp1
     else return inp2
 }
