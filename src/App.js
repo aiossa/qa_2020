@@ -16,7 +16,7 @@ function App() {
           Редактируйте <code>src/App.js</code> и сохраните для обновления!
         </p>
         <p>
-            Result of calculation is {simpleCalculation(10,5)}
+            Result of calculation is {simpleCalculation(10,4)}
           </p>
         <a
           className="App-link"

@@ -12,4 +12,4 @@ test('renders learn react link', () => {
 
 it('calculation works', () => {
     expect(simpleCalculation(4,10)).toEqual(14);
-}); 
+});
