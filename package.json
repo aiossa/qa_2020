@@ -18,7 +18,8 @@
     "testWithCoverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "heroku_build": "npm run serve",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "lint": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0"
   }
 }
